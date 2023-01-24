@@ -1,0 +1,25 @@
+---
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    images: string[];
+  };
+}
+const { frontmatter } = Astro.props;
+import BaseLayout from "./BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="image__container">
+    {
+      frontmatter.images.map((img, index) => (
+        <img
+          src={img}
+          loading="lazy"
+          alt={`picture of ${frontmatter.description}, ${index + 1}`}
+        />
+      ))
+    }
+  </div>
+</BaseLayout>
