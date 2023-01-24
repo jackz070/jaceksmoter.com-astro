@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ImageGalleryLayout.astro
-title: 'people'
+title: 'Portraits / Portrety'
 description: 'Photograph of a person'
 images: ["/people/miniDSCF6552.jpg",
 "/people/miniDSCF6558.jpg",

@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
 ---
 
 <!DOCTYPE html>
@@ -14,15 +15,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   </head>
 
   <body class="body__container">
-    <div class="theme-switch-wrapper">
-      <span>Dark Mode</span>
-      <label class="theme-switch" for="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div>
-      </label>
-    </div>
     <BaseLayout>
       <main>
+
         <section class="section__about">
           <h1 class="line-decoration-2">About / O Mnie</h1>
           <img id="section__about-image" src="/image-about.jpg" />

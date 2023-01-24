@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ImageGalleryLayout.astro
-title: 'Kamchatka Theater'
+title: 'Theater / Teatr | Kamchàtka'
 description: 'Actors from Kamchatka theater group during a play in the Main Market Square in Krakow, Poland'
 images: ["/kamchatka/DSCF6733.jpg",
 "/kamchatka/DSCF6740.jpg",

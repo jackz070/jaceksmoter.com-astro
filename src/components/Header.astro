@@ -1,5 +1,8 @@
 ---
 import "../styles/global.css";
+import HeaderItem from "./HeaderItem.astro";
+const allGalleries = await Astro.glob("../pages/galleries/*.md");
+import { ThemeSwitch } from "astro-color-scheme";
 ---
 
 <header class="">
@@ -12,7 +15,13 @@ import "../styles/global.css";
     <label id="mobile__menu" for="mobile__menu-input">
       <span class="hamburger"></span></label
     >
+    <div>
+      <ThemeSwitch strategy="button">
+        <button>Toggle Theme</button>
+      </ThemeSwitch>
+    </div>
     <ul class="header__nav-list">
+      {allGalleries.map((gallery) => <HeaderItem gallery={gallery} />)}
       <li>
         <h2>
           <a href="gallery-weddingIM.html">Wedding / Ślub | Iga & Maciek</a>
