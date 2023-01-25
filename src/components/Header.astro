@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import HeaderItem from "./HeaderItem.astro";
-import ThemeToggle from "./ThemeToggle.astro";
 const allGalleries = await Astro.glob("../pages/galleries/*.md");
 ---
 
@@ -15,9 +14,10 @@ const allGalleries = await Astro.glob("../pages/galleries/*.md");
     <label id="mobile__menu" for="mobile__menu-input">
       <span class="hamburger"></span></label
     >
-    <ThemeToggle />
+
     <ul class="header__nav-list">
       {allGalleries.map((gallery) => <HeaderItem gallery={gallery} />)}
     </ul>
   </nav>
+
 </header>

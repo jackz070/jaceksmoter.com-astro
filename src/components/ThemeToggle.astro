@@ -3,8 +3,26 @@ import { ThemeSwitch } from "astro-color-scheme";
 import { Icon } from "astro-icon";
 ---
 
-<div>
-  <ThemeSwitch strategy="button">
-    <button>Toggle Theme</button>
+<div class="theme-switch-wrapper">
+  <span>Dark Mode</span>
+  <ThemeSwitch strategy="checkbox">
+    <label for="checkbox" class="theme-switch">
+      <input type="checkbox" id="checkbox" /><div class="slider round">
+      </div></label
+    >
   </ThemeSwitch>
 </div>
+
+<style>
+  div {
+  }
+  button {
+    display: flex;
+    align-items: center;
+  }
+  .icon {
+    width: 42px;
+    height: 42px;
+    margin-left: 0.5rem;
+  }
+</style>
