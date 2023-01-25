@@ -1,0 +1,35 @@
+---
+layout: ../../layouts/ImageGalleryLayout.astro
+title: 'Wedding / Ślub | Iga & Maciek'
+description: 'Picture taken during a wedding'
+images: ["/weddingIM/IMG_3735.jpg",
+"/weddingIM/IMG_3577.jpg",
+"/weddingIM/IMG_3574.jpg",
+"/weddingIM/IMG_3584.jpg",
+"/weddingIM/IMG_3614.jpg",
+"/weddingIM/IMG_3634.jpg",
+"/weddingIM/IMG_3713.jpg",
+"/weddingIM/IMG_3788.jpg",
+"/weddingIM/IMG_3967.jpg",
+"/weddingIM/IMG_4029.jpg",
+"/weddingIM/IMG_4054.jpg",
+"/weddingIM/IMG_4070.jpg",
+"/weddingIM/IMG_4134.jpg",
+"/weddingIM/IMG_4279.jpg",
+"/weddingIM/IMG_4221.jpg",
+"/weddingIM/IMG_4167.jpg",
+"/weddingIM/IMG_4485.jpg",
+"/weddingIM/IMG_4624.jpg",
+"/weddingIM/IMG_4658.jpg",
+"/weddingIM/IMG_4682.jpg",
+"/weddingIM/IMG_4740.jpg",
+"/weddingIM/IMG_4752.jpg",
+"/weddingIM/IMG_4934.jpg",
+"/weddingIM/IMG_4748.jpg",
+"/weddingIM/IMG_4782.jpg",
+"/weddingIM/IMG_4898.jpg",
+"/weddingIM/IMG_5013.jpg",
+"/weddingIM/IMG_5024.jpg",
+"/weddingIM/IMG_5054.jpg",
+"/weddingIM/IMG_4950.jpg"]
+---

@@ -4,6 +4,6 @@ const { gallery } = Astro.props;
 
 <li>
   <h2>
-    <a href={gallery.url}>{gallery.frontmatter.title}</a>
+    <a href={gallery.url} rel="prefetch">{gallery.frontmatter.title}</a>
   </h2>
 </li>
