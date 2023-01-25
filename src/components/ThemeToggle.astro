@@ -4,25 +4,68 @@ import { Icon } from "astro-icon";
 ---
 
 <div class="theme-switch-wrapper">
-  <span>Dark Mode</span>
   <ThemeSwitch strategy="checkbox">
-    <label for="checkbox" class="theme-switch">
-      <input type="checkbox" id="checkbox" /><div class="slider round">
-      </div></label
-    >
+    <label for="checkbox" class="container">
+      <input type="checkbox" id="checkbox" />
+      <Icon name="ph:sun" class="icon icon-sun" />
+      <Icon name="ph:moon" class="icon icon-moon" />
+    </label>
   </ThemeSwitch>
 </div>
 
 <style>
-  div {
-  }
-  button {
+  .theme-switch-wrapper {
     display: flex;
     align-items: center;
+
+    position: fixed;
+    right: 0;
+    top: 0.75rem;
+
+    z-index: 17;
+
+    transform: scale(0.75);
   }
+
   .icon {
-    width: 42px;
-    height: 42px;
-    margin-left: 0.5rem;
+    position: absolute;
+    width: 2.75rem;
+  }
+
+  .icon-moon {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(50deg);
+    transition: all 0.7s ease-in;
+  }
+
+  .icon-sun {
+    opacity: 1;
+    transform: translateY(0) rotateZ(0deg);
+    transition: all 0.7s ease-in;
+  }
+
+  input:checked ~ .icon-moon {
+    opacity: 1;
+    transform: translateY(0%) rotateZ(0deg);
+  }
+  input:checked ~ .icon-sun {
+    opacity: 0;
+    transform: translateY(20%) rotateZ(10deg);
+  }
+
+  .container {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  .container input {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .theme-switch-wrapper {
+      right: -0.5rem;
+    }
   }
 </style>
