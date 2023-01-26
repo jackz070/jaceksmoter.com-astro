@@ -1,0 +1,40 @@
+---
+import HeaderItem from "./HeaderItem.astro";
+const allGalleries = await Astro.glob("../pages/galleries/*.md");
+---
+
+<script>
+  const currentPath = window.location.pathname;
+  const isHomepage = currentPath === "/";
+  const navList = document.querySelector("ul");
+  const mobileMenu = document.querySelector("#mobile__menu");
+  if (isHomepage) {
+    if (navList && mobileMenu) {
+      navList.classList.add("header__nav-homepage");
+      mobileMenu.classList.add("mobileMenu__hidden");
+    }
+  } else {
+    if (navList && mobileMenu) {
+      navList.classList.remove("header__nav-homepage");
+      mobileMenu.classList.remove("mobileMenu__hidden");
+    }
+  }
+  console.log(currentPath);
+</script>
+
+<nav class="">
+  <input type="checkbox" id="mobile__menu-input" />
+  <label id="mobile__menu" for="mobile__menu-input">
+    <span class="hamburger"></span>
+  </label>
+
+  <ul class="header__nav-list">
+    {allGalleries.map((gallery) => <HeaderItem gallery={gallery} />)}
+  </ul>
+</nav>
+
+<style>
+  .mobileMenu__hidden {
+    display: none;
+  }
+</style>

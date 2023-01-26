@@ -286,6 +286,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: var(--black);
+  text-align: center;
 
   font-size: 1rem;
 
@@ -300,7 +301,6 @@ footer a:hover {
 }
 
 .header__nav-homepage {
-  margin-top: 24px;
 }
 
 /* Dark theme switcher */
@@ -407,6 +407,14 @@ footer a:hover {
   #mobile__menu-input:checked + #mobile__menu > .hamburger:after {
     transform: rotate(90deg);
     top: 0;
+  }
+
+  .section__about {
+    position: absolute;
+    right: 10vw;
+    top: 0;
+    padding-top: 4rem;
+    margin-left: 5px;
   }
 
   .section__about {
@@ -556,13 +564,6 @@ footer a:hover {
   }
 
   @media screen and (max-height: 600px) {
-    .section__about {
-      position: absolute;
-      right: 10vw;
-      top: 0;
-      padding-top: 4rem;
-    }
-
     #section__about-image {
       max-width: 15rem;
     }

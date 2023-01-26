@@ -1,23 +1,11 @@
 ---
 import "../styles/global.css";
-import HeaderItem from "./HeaderItem.astro";
-const allGalleries = await Astro.glob("../pages/galleries/*.md");
+import Navigation from "./Navigation.astro";
 ---
 
 <header class="">
   <h1 class="line-decoration-1" id="header__title">
     <a href="/">Jacek Smoter</a>
   </h1>
-
-  <nav class="">
-    <input type="checkbox" id="mobile__menu-input" />
-    <label id="mobile__menu" for="mobile__menu-input">
-      <span class="hamburger"></span></label
-    >
-
-    <ul class="header__nav-list">
-      {allGalleries.map((gallery) => <HeaderItem gallery={gallery} />)}
-    </ul>
-  </nav>
-
+  <Navigation client:load />
 </header>

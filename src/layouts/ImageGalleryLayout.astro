@@ -7,6 +7,8 @@ interface Props {
   };
 }
 const { frontmatter } = Astro.props;
+import GalleryFooter from "../components/GalleryFooter.astro";
+import Navigation from "../components/Navigation.astro";
 import BaseLayout from "./BaseLayout.astro";
 ---
 
@@ -22,4 +24,5 @@ import BaseLayout from "./BaseLayout.astro";
       ))
     }
   </div>
+  <GalleryFooter />
 </BaseLayout>
