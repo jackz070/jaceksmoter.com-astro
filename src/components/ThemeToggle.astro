@@ -60,6 +60,7 @@ import { Icon } from "astro-icon";
     height: 34px;
     position: relative;
     width: 60px;
+    cursor: pointer;
   }
   .container input {
     display: none;
@@ -77,5 +78,10 @@ import { Icon } from "astro-icon";
     .icon {
       width: 2.25rem;
   }
+  @media screen and (max-height: 600px){    
+    .theme-switch-wrapper{
+      top: .3rem;
+    }}
+
   }
 </style>

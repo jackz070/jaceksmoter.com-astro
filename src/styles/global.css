@@ -411,7 +411,6 @@ footer a:hover {
 
   .section__about {
     position: absolute;
-    right: 10vw;
     top: 0;
     padding-top: 4rem;
   }
@@ -499,6 +498,16 @@ footer a:hover {
   .hamburger {
     top: 75px;
   }
+
+  @media screen and (max-height: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .section__about {
+      padding-top: 50vh;
+    }
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -542,6 +551,10 @@ footer a:hover {
 
     footer {
       display: none;
+    }
+
+    .section__about {
+      right: 10vw;
     }
   }
 
