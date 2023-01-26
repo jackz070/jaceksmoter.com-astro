@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import Header from "../components/Header.astro";
-import "@fontsource/ibm-plex-mono";
 import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 
@@ -18,12 +17,11 @@ import ThemeToggle from "../components/ThemeToggle.astro";
     <Header />
     <div class="theme-toggle"><ThemeToggle /></div>
     <slot />
+    <style>
+      .theme-toggle {
+        position: absolute;
+        right: 0;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  .theme-toggle {
-    position: absolute;
-    right: 0;
-  }
-</style>
