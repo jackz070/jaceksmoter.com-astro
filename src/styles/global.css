@@ -145,7 +145,7 @@ a {
 
 body {
   scroll-behavior: smooth;
-  overflow-y: hidden;
+  overflow-y: scroll;
 
   margin-left: auto;
   margin-right: auto;
