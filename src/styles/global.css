@@ -251,8 +251,8 @@ header {
   display: flex;
   flex-direction: row;
 
-  height: fit-content;
-
+  height: 70vh;
+  width: fit-content;
   position: fixed;
 
   overflow: scroll;
@@ -267,7 +267,6 @@ header {
 .image__container img {
   height: 70vh;
   max-width: 100%;
-
   margin-right: 3rem;
 }
 
