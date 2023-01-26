@@ -7,5 +7,4 @@ import prefetch from "@astrojs/prefetch";
 export default defineConfig({
   integrations: [prefetch()],
   site: "https://jackz070.github.io",
-  base: "/jaceksmoter.com-astro",
 });
